@@ -146,7 +146,7 @@ public class CharacterController2D : MonoBehaviour
 	[HideInInspector][NonSerialized]
 	public Vector3 velocity;
 	public bool isWalled { get { return (collisionState.left || collisionState.right) ; } } //Based on isGrounded Bool
-	public bool isGrounded { get { return collisionState.below; } }
+	public bool isGrounded { get {  return collisionState.below; } }
 
 	const float kSkinWidthFloatFudgeFactor = 0.001f;
 
